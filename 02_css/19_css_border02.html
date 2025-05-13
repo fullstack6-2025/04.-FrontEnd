@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>상품 출력 레이아웃 (float) </title>
 	<style>
 		div {border : 1px solid red }
 		.wrap {
@@ -15,6 +15,10 @@
 			height: 200px ; 
 			float : left ; 		/*	블락으로 떨어진 박스를 인라인 형식으로 바꿈  */
 			margin : 50px; 
+		}
+		.clear {
+			/* float 속성을 제거함.  both : left, right */
+			clear:both; 
 		}
 
 	</style>
@@ -35,6 +39,10 @@
 		<div class="d1">8</div>
 		<div class="d1">9</div>
 		<div class="d1">10</div>
+
+		<!-- 플랫 속성을 제거 -->
+		 <div class="clear"> </div>
+
 		<div class="d1">11</div>
 		<div class="d1">12</div>
 		<div class="d1">13</div>
