@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grad1, #grad2, #grad1-1, #grad1-2{
+            border : 1px solid red;
+            height: 50px;
+        }
+        #grad1{
+            /* 선형 그라디언트 
+                to right, to left, to top, to bottom
+            */
+            background: linear-gradient(to right, yellow,red);
+        }
+        #grad1-1{
+            background: linear-gradient(to left, green, red, yellow,black, brown);
+        }
+        #grad1-2{
+            background: linear-gradient(45deg, yellow, red);
+            height: 200px;
+        }
+        #grad2{
+            /* 원형 그라디언트  */
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 그레디언트 : 색상을 노란색에서 빨간색으로 점점 변화 되도록 하는 효과 
+            선형 : 선을 기준으로 점점 변화 되도록 효과를 줌   <== 많이 사사용 
+            원형 : 원형을 기준으로 점점 변화 효과를 줌 
+    -->
+    <h2> 선형 그라디언트 </h2>
+    <div id="grad1"> </div>
+    <div id="grad1-1"> </div>
+    <div id="grad1-2"> </div>
+
+    <h2> 원형 그라디언트 </h2>
+    <div id="grad2"> </div>
+
+    
+</body>
+</html>
