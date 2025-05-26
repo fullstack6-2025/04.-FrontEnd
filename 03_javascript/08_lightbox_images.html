@@ -66,7 +66,7 @@
         // 큰 이미지를 출력 하는 함수 
         function showLightbox() {
             console.log("함수 호출 성공"); 
-            let bigLocation= this.setAttribute("data-src"); 
+            let bigLocation= this.getAttribute("data-src"); 
             lightboxImage.setAttribute("src", bigLocation); 
             lightbox.style.display='block'; 
         }
